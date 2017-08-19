@@ -1,1 +1,2 @@
-__init__.py
+"""Import function."""
+from . import homework_input
