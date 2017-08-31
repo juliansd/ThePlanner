@@ -11,8 +11,13 @@ class TestCourseInput(unittest.TestCase):
         metadata = ["Intro to Computer Science", 4, "major", 2.5]
         result = course_input.transform(metadata)
         expected_result = [
-            {"course": "Intro to Computer Science",
-                "credits": 4, "importance": "major", "hours_per_week": 2.5}]
+            {
+                "title": "Intro to Computer Science",
+                "credits": 4, "importance": "major",
+                "hours_per_week": 2.5,
+                "homework": []
+            }
+        ]
         self.assertEqual(result, expected_result)
 
 if __name__ == "__main__":

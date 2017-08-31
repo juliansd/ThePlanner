@@ -5,7 +5,7 @@ def transform(metadata):
     course_object = {}
 
     course = str(input("Course name: "))
-    course_object["course"] = course
+    course_object["title"] = course
 
     credits = int(input("Course credits: "))
     course_object["credits"] = credits
@@ -16,6 +16,8 @@ def transform(metadata):
 
     hours_per_week = float(input("Hours of course per week: "))
     course_object["hours_per_week"] = hours_per_week
+
+    course_object["homework"] = []
 
     retval.append(course_object)
     return(retval)
