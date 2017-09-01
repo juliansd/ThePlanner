@@ -1,5 +1,6 @@
 
 def output_to_file(metadata):
+    """Function which writes data to a file."""
     file_object = open("output_file.txt", "w")
     file_object.write(metadata)
     file_object.close()
