@@ -4,7 +4,7 @@ import homework_input
 
 
 class TestHomeworkInput(unittest.TestCase):
-    """Unittest test Class."""
+    """Unittest class."""
 
     def test_homework_input(self):
         """Test homework_input function."""
