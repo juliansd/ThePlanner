@@ -1,3 +1,3 @@
 from . import course
 from . import homework
-from . import writetofile
+from . import write_to_file
