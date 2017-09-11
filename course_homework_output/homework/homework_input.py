@@ -6,7 +6,7 @@ def transform(metadata):
     verification = input(
         "Do you have homework for this class you would like to add? ")
 
-    if verification is True:
+    if verification == "yes" or verification == "y":
 
         course = str(input("Which course is the assignment for: "))
         title = str(input("Title of assignment: "))
