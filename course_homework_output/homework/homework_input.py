@@ -8,7 +8,6 @@ def transform(metadata):
 
     if verification == "yes" or verification == "y":
 
-        course = str(input("Which course is the assignment for: "))
         title = str(input("Title of assignment: "))
         kind = str(input("What kind of homework assignment is this: "))
         due_date = str(input("When is the assignment due: "))
