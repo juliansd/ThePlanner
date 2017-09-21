@@ -21,7 +21,7 @@ class TestCourseHomeworkOutput(unittest.TestCase):
 
         course_metadata[0]["homework"] = homework_metadata
 
-        file_object = open('output_file.txt', 'r+')
+        file_object = open('data.txt', 'r+')
         file_object.write(str(course_metadata))
 
         result = file_object.read()

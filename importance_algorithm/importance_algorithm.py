@@ -1,14 +1,13 @@
 
-def calculate_score(metadata):
-    """
-    Each category for calculating a total score of 4 score include the
-        Following.
+"""
+    Category calculations out of a score of 4.
+
     -   Whether if it's for a major, minor, or general elective
         - major = 0.75
         - minor = 0.5
         - general elective = 0.25
-    -   What type of assignment is due
-        - types include:
+    -   What kind of assignment is due
+        - kinds include:
             final study (FS) = 0.8
             midterm study (MS) = 0.8
             test study (TS) = 0.7
@@ -28,4 +27,4 @@ def calculate_score(metadata):
         - The algorithm will take the inputed hours from the user, and divide
             By 5.  For examlple if the assignment will take 3 hours to
             Complete, time_to_complete will be scored at 0.6
-    """
+"""
