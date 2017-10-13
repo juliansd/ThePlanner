@@ -1,1 +1,0 @@
-[{'title': 'Intro to Computer Science', 'credits': 4, 'importance': 'major', 'hours_per_week': 2.5, 'homework': {'title': 'AI in the World', 'kind': 'paper', 'due_date': '12/19', 'hours_to_finish': 1.5}}]
