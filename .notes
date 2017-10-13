@@ -1,6 +1,8 @@
-
 August 19th:
 Need to figure out how to take the input given from the user about their homework and match that with the class object that they have input as well.  I think for now I could create a seperate directory to test adding the homework to a class object. 
  
 October 2nd:
-Working towards taking the user data and storing it as bytes instead of storing it on a text file which then has to be read in.  Makes more sense to start using data storage since it is more efficient once the data gets larger.  
+Working towards taking the user data and storing it as bytes instead of storing it on a text file which then has to be read in.  Makes more sense to start using data storage since it is more efficient once the data gets larger.
+
+October 13th:
+Need to spend the next couple of sessions or so planning out extensively what I need and want to do with this project and what resources and or skills I'll need to apply to achieve it.
