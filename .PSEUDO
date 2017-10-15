@@ -1,14 +1,17 @@
 .PSEUDO
 
 # The program asks the user if they would like to add or drop any courses from their list.
+    (Use data storage)
 
     # If drop, the program drops the course and prompts the user again.
+        (Use data storage)
     # Else, the program adds the course info that the user inputs.
 
         ## Course title.
         ## Credits.
         ## Importance (major, minor, GE)
         ## Hours per week spent in class
+            (Use data storage)
 
         ## The program asks the user if they have homework that they want to input.
 
@@ -17,6 +20,7 @@
                 #### Homework title.
                 #### Hours to complete.
                 #### Due date.
+                    (Use data storage)
 
             ### If the user says no, their homework for the following 10 days is displayed with deadlines.
 
