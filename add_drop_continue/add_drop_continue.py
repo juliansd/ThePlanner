@@ -39,7 +39,7 @@ def main():
     print("\n Welcome to your planner! What would you like to do? \n")
     while not flag:
         add_drop_continue = input(
-            "You can `add` (a), `drop` (d) , or `continue` (c) to your planner: ")
+            "You can `add`(a), `drop`(d) , or `continue`(c) to your planner: ")
         if add_drop_continue == 'add' or add_drop_continue == 'a':
             AddDropContinue.add_course()
         else:
