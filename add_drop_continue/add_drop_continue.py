@@ -7,6 +7,23 @@ class AddDropContinue:
 
     course_list = []
 
+    def help(self):
+        """A method which shows a list of commands."""
+        print("")
+        print("**************************************************************")
+        print("List of Planner commands:\n")
+
+        # add command tooltip
+        print(
+            "add(a) \t\t Prompts user to add course to their `course_list`\n")
+
+        # drop command tooltip
+        print("drop(d) \t Prompts the user to drop course from their")
+        print("\t\t`course_list`\n")
+
+        # continue command tooltip
+        print("continue(c) \t Takes user to their planner\n")
+
     def add_course(self):
         """Add course to planner and stores in pickle file."""
         course_object = {}
@@ -40,17 +57,38 @@ class AddDropContinue:
         pickle.dump(AddDropContinue.course_list, open(
             "user_data.p", "wb"))
 
+    def drop_course(self):
+        """Method for dropping courses from user_data."""
+        course_list = pickle.load(open("user_data.p", "rb"))
+        print("Current course list:\n")
+
+        for course_object in course_list:
+            print(course_object["title"])
+        print("\n")
+
+        course_to_drop = input("Which course would you like to drop: ")
+        for course_object in course_list:
+            if course_object["title"] == course_to_drop:
+                course_list.remove(course_object)
+
+        pickle.dump(course_list, open("user_data.p", "wb"))
+
 
 def main():
     """Main method, runs initial input."""
     user = AddDropContinue()
     flag = False
-    print("\n Welcome to your planner! What would you like to do? \n")
+    print("Welcome to your planner! What would you like to do? \n")
+    print("You can `add`(a), `drop`(d) , or `continue`(c) to your planner. \n")
     while not flag:
         add_drop_continue = input(
-            "You can `add`(a), `drop`(d) , or `continue`(c) to your planner: ")
+            "Enter `help`(h) for a list of all commands: ")
         if add_drop_continue == 'add' or add_drop_continue == 'a':
             user.add_course()
+        elif add_drop_continue == 'drop' or add_drop_continue == 'd':
+            user.drop_course()
+        elif add_drop_continue == 'help' or add_drop_continue == 'h':
+            user.help()
         elif add_drop_continue == 'end' or add_drop_continue == 'e':
             flag = True
         else:
