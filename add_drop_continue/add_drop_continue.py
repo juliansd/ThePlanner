@@ -7,7 +7,7 @@ class AddDropContinue:
 
     course_list = []
 
-    def help(self):
+    def command_tooltips(self):
         """A method which shows a list of commands."""
         print("")
         print("**************************************************************")
@@ -88,7 +88,7 @@ def main():
         elif add_drop_continue == 'drop' or add_drop_continue == 'd':
             user.drop_course()
         elif add_drop_continue == 'help' or add_drop_continue == 'h':
-            user.help()
+            user.command_tooltips()
         elif add_drop_continue == 'end' or add_drop_continue == 'e':
             flag = True
         else:
