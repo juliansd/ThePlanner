@@ -3,7 +3,7 @@ import unittest
 import pickle
 
 
-class TestAddDropContinue(unittest.TestCase):
+class TestCommands(unittest.TestCase):
     """A class which allows for testing of methods."""
 
     def test_drop(self):

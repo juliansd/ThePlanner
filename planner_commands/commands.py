@@ -2,7 +2,7 @@
 import pickle
 
 
-class AddDropContinue:
+class Commands:
     """Class for adding, dropping, and showing user's planner."""
 
     course_list = []
@@ -20,6 +20,9 @@ class AddDropContinue:
         # drop command tooltip
         print("drop(d) \t Prompts the user to drop course from their")
         print("\t\t`course_list`\n")
+
+        # end command tooltip
+        print("end(e) \t\t Exits the planner\n")
 
         # continue command tooltip
         print("continue(c) \t Takes user to their planner\n")
@@ -51,10 +54,10 @@ class AddDropContinue:
             print(
                 "Please enter a floating point value for the hours per week you \
                 attend this course")
-        AddDropContinue.course_list.append(course_object)
+        Commands.course_list.append(course_object)
 
         # Stores course_object as a binary file to a pickle file
-        pickle.dump(AddDropContinue.course_list, open(
+        pickle.dump(Commands.course_list, open(
             "user_data.p", "wb"))
 
     def drop_course(self):
@@ -76,7 +79,7 @@ class AddDropContinue:
 
 def main():
     """Main method, runs initial input."""
-    user = AddDropContinue()
+    user = Commands()
     flag = False
     print("Welcome to your planner! What would you like to do? \n")
     print("You can `add`(a), `drop`(d) , or `continue`(c) to your planner. \n")
