@@ -1,0 +1,22 @@
+#:kivy 1.10.0
+<WelcomeWindowWidget>
+    orientation: 'vertical'
+    BoxLayout:
+        Label:
+            text: app.name
+            font_size: 100
+            font_name: 'fonts/Oilrig.otf'
+            pos_hint: {'x':0, 'y':-0.4}
+    BoxLayout:
+        Label:
+            text: 'Welcome to Planner'
+            font_size: 35
+            pos_hint: {'x':0, 'y':0}
+    FloatLayout:
+        Button:
+            id: get_started
+            text: "GET STARTED"
+            bold: True
+            font_size: 25
+            pos_hint: {'x':0.4, 'y':.8}
+            size_hint: (.2, .2)

@@ -1,4 +1,11 @@
-"""Imports pickle class for data storage and streaming."""
+
+"""This module runs the main commands for the Planner app.
+
+For now these commands consist of adding a course, dropping a course, and
+running a help function which shows in the console a list of tooltips for each
+command.  Using the pickle module I'm able to take the user input and output a
+binary file containing the information that they've inputted.
+"""
 import pickle
 
 
@@ -75,6 +82,15 @@ class Commands:
                 course_list.remove(course_object)
 
         pickle.dump(course_list, open("user_data.p", "wb"))
+
+    def continue_to_planner(self):
+        """
+        Method which brings user to their planner.
+
+        Bypasses add/drop course interface.  In this part of the planner users
+        will be able to add homework to specific courses as well to be sorted
+        for their daily homework assignments.
+        """
 
 
 def main():

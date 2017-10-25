@@ -1,6 +1,9 @@
 #
 ####### requirements.txt #######
 #
-####### requirements without version specifiers #######
+####### REQUIREMENTS WITHOUT VERSION SPECIFIERS #######
 kivy
+#
+####### REQUIREMENTS WITH VERSION SPECIFIERS #######
+Cython==0.26.1
 #
